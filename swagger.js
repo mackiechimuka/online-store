@@ -4,8 +4,8 @@ const doc = {
         title:'Online Api',
         description: 'OnlineApi'
     },
-    host:'https://localhost:8080/users',
-    schemes:['https'],
+    host:'localhost:8080',
+    schemes:['http'],
 };
 
 const output = './swagger.json';

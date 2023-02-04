@@ -5,11 +5,12 @@ const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const cors = require('cors')
 dotenv.config();
-
-const port = process.env.Port || 8080
+const swaggerUi = require('swagger-ui-express');
+const swaggerDocument = require('../swagger.json');
 
 
 app
+.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument))
 .use(
     bodyPasser.json()
 )
@@ -31,6 +32,8 @@ mongoose.connect(process.env.MONGODB_URI,
       }
       }
 );
+
+const port = process.env.Port || 8080 
 app.listen(port,()=>{
    console.log(`Running on localhost:${port}`)
 })

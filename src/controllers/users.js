@@ -10,6 +10,7 @@ function returnError(res, error) {
 const getAll = (req,res,next)=>{
     User.find()
     .then((users)=>{
+        res.setHeader('Content-Type', 'application/json');
         res.status(200).json(
             {
                 message:"Users successfully fetched",
