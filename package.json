@@ -6,9 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "devStart": "  nodemon ./src/server.js",
-    "start":"./src/server.js",
-    "swagger":"./swagger.js"
-  },
+    "start": " node ./src/server.js",
+    "swagger": "./swagger.js"
+   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mackiechimuka/online-store.git"
