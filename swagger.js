@@ -4,7 +4,7 @@ const doc = {
         title:'Online Api',
         description: 'OnlineApi'
     },
-    host:'localhost:8080',
+    host:'fashion-inc.onrender.com',
     schemes:['http'],
 };
 

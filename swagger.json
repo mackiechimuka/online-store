@@ -5,13 +5,13 @@
     "description": "OnlineApi",
     "version": "1.0.0"
   },
-  "host": "localhost:8080",
+  "host": "fashion-inc.onrender.com",
   "basePath": "/",
   "schemes": [
     "http"
   ],
   "paths": {
-    "/users/": {
+    "/users": {
       "get": {
         "description": "",
         "produces": [
