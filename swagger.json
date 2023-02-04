@@ -1,11 +1,11 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "My Contact Api",
-    "description": "My contact api",
+    "title": "Online Api",
+    "description": "OnlineApi",
     "version": "1.0.0"
   },
-  "host": "https://localhost8080/users",
+  "host": "https://localhost:8080/users",
   "basePath": "/",
   "schemes": [
     "http"

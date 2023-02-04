@@ -1,0 +1,11 @@
+{ "users":{
+    "firstName": "McNeill",
+    "lastName": "Chimuka",
+    "email": "mackie@test.com",
+    "phone": "774-034-998",
+    "city": "Gweru",
+    "state":"Midlands",
+    "country":"Zimbabwe",
+    "zipCode":"263"
+  }
+}
