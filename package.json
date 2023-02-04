@@ -2,7 +2,7 @@
   "name": "online-store",
   "version": "1.0.0",
   "description": "oneline store api",
-  "main": "server.js",
+  "main": ".src/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "devStart": "  nodemon ./src/server.js",
