@@ -8,7 +8,7 @@
   "host": "fashion-inc.onrender.com",
   "basePath": "/",
   "schemes": [
-    "https"
+    "http"
   ],
   "paths": {
     "/users/": {
@@ -64,6 +64,85 @@
         "responses": {
           "201": {
             "description": "Created"
+          }
+        }
+      }
+    },
+    "/users/{id}": {
+      "patch": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "firstName": {
+                  "example": "any"
+                },
+                "lastName": {
+                  "example": "any"
+                },
+                "email": {
+                  "example": "any"
+                },
+                "phone": {
+                  "example": "any"
+                },
+                "city": {
+                  "example": "any"
+                },
+                "state": {
+                  "example": "any"
+                },
+                "country": {
+                  "example": "any"
+                },
+                "zipCode": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "0": {
+            "description": ""
+          },
+          "2": {
+            "description": ""
+          },
+          "3": {
+            "description": ""
+          },
+          "4": {
+            "description": ""
+          },
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "No Content"
           }
         }
       }

@@ -5,7 +5,7 @@ const doc = {
         description: 'OnlineApi'
     },
     host:'fashion-inc.onrender.com',
-    schemes:['https'],
+    schemes:['http'],
 };
 
 const output = './swagger.json';

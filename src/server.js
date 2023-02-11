@@ -3,10 +3,11 @@ const app = express();
 const bodyPasser = require('body-parser');
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
-const cors = require('cors')
+const cors = require('cors');
 dotenv.config();
 const swaggerUi = require('swagger-ui-express');
 const swaggerDocument = require('../swagger.json');
+const createError = require('http-errors');
 
 
 app
@@ -19,6 +20,21 @@ app
     next()
 })
 .use('/',require('./routes'))
+//404 error handler and pass to error handler
+.use((req,res,next)=>{
+   next(createError(404,'Not found'))
+})
+// error handler
+.use((err,req,res,next)=>{
+   res.status(err.status || 500)
+   res.send({
+      error:{
+         status:err.status ||500,
+         message: err.message
+      }
+   })
+});
+
 
 mongoose.connect(process.env.MONGODB_URI,
    { useNewUrlParser: true }, (err, res) => {
