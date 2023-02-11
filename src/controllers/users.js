@@ -2,7 +2,6 @@ const createError = require('http-errors');
 
 const User = require('../models/user');
 const {userAuthSchema} = require('../../helpers/validation_schema');
-const { ObjectId } = require('mongodb');
 const { default: mongoose } = require('mongoose');
 const { result } = require('@hapi/joi/lib/base');
 
