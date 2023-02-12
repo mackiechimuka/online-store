@@ -118,7 +118,7 @@ const deleteUser = async (req,res,next)=>{
         const userId = req.params.id;
         const getItem = await User.findByIdAndDelete({_id:userId});
         if(getItem.$isDeleted){
-            console.log('User succesfully deleted');
+            console.log('User succesfully   deleted');
             console.log(getItem);
             res.status(204).json({
                 message:"User succesfully deleted"
