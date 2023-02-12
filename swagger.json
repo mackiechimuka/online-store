@@ -8,7 +8,7 @@
   "host": "fashion-inc.onrender.com",
   "basePath": "/",
   "schemes": [
-    "http"
+    "https"
   ],
   "paths": {
     "/users/": {
